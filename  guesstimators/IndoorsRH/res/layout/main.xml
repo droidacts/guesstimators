@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1" xmlns:android="http://schemas.android.com/apk/res/android">
+<TableRow>
+        <TextView style="@style/myLabels" android:layout_column="1" android:text="@string/label_1" />
+</TableRow>
+<TableRow>
+<SeekBar android:layout_column="1" android:id="@+id/SeekBar01" android:padding="3dp" android:max="100" android:progress="33" ></SeekBar>
+<TextView style="@style/myNumOutputs" android:text="000F" android:id="@+id/TextView01" ></TextView>
+</TableRow>
+<TableRow>
+        <TextView style="@style/myLabels" android:layout_column="1" android:text="@string/label_2" />
+</TableRow>
+<TableRow>
+<SeekBar android:layout_column="1" android:id="@+id/SeekBar02" android:padding="3dp" android:max="100" android:progress="100" ></SeekBar>
+<TextView style="@style/myNumOutputs" android:text="000%" android:id="@+id/TextView02" ></TextView>
+</TableRow>
+
+<View android:layout_height="2dp" android:background="#FF909090" />
+
+<TableRow>
+        <TextView style="@style/myLabels" android:layout_column="1" android:text="@string/label_3" />
+</TableRow>
+<TableRow>
+<SeekBar android:layout_column="1" android:id="@+id/SeekBar03" android:padding="3dp" android:max="100" android:progress="55" ></SeekBar>
+<TextView style="@style/myNumOutputs" android:text="000F" android:id="@+id/TextView03" ></TextView>
+</TableRow>
+        <TextView style="@style/myLabels" android:layout_column="1" android:text="@string/label_4" android:textStyle="italic" />
+<TableRow>
+<ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_column="1" android:id="@+id/SeekBar04" android:padding="3dp" android:focusable="false" android:layout_gravity="center_vertical" android:max="100" android:progress="33" ></ProgressBar>
+<TextView style="@style/myNumOutputs" android:text="000%" android:id="@+id/TextView04" android:textColor="#EEEEEE"></TextView>
+</TableRow>
+</TableLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory
+    android:title="Units, Locale">
+    <ListPreference android:key="PREFS_UNITS" android:entryValues="@array/F_C" android:entries="@array/units_T" android:defaultValue="F" android:summary="@string/label_FC" android:title="@string/label_units_T"></ListPreference>
+  </PreferenceCategory>         
+</PreferenceScreen>
