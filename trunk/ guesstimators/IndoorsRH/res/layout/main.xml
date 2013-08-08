@@ -1,34 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout android:layout_width="fill_parent"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:stretchColumns="1" xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_marginRight="2dp"
+    android:stretchColumns="1" >
+
 <TableRow>
         <TextView style="@style/myLabels" android:layout_column="1" android:text="@string/label_1" />
 </TableRow>
-<TableRow>
-<SeekBar android:layout_column="1" android:id="@+id/SeekBar01" android:padding="3dp" android:max="100" android:progress="33" ></SeekBar>
-<TextView style="@style/myNumOutputs" android:text="000F" android:id="@+id/TextView01" ></TextView>
-</TableRow>
-<TableRow>
-        <TextView style="@style/myLabels" android:layout_column="1" android:text="@string/label_2" />
-</TableRow>
-<TableRow>
-<SeekBar android:layout_column="1" android:id="@+id/SeekBar02" android:padding="3dp" android:max="100" android:progress="100" ></SeekBar>
-<TextView style="@style/myNumOutputs" android:text="000%" android:id="@+id/TextView02" ></TextView>
-</TableRow>
 
-<View android:layout_height="2dp" android:background="#FF909090" />
+<TableRow android:minWidth="25dp" >
+
+<SeekBar android:layout_column="1" android:id="@+id/SeekBar01" android:padding="3dp" android:max="100" android:progress="33" ></SeekBar>
+
+<TextView
+    android:id="@+id/TextView01"
+    style="@style/myNumOutputs"
+    android:text="@string/Placeholder1"
+    android:textSize="20sp"
+    android:typeface="normal" >
+
+</TextView>
+</TableRow>
+<TableRow>
+         <TextView style="@style/myLabels" android:layout_column="1" android:text="@string/label_2" />
+</TableRow>
+<TableRow>
+      <SeekBar
+        android:id="@+id/SeekBar02"
+        android:layout_column="1" 
+        android:max="100"
+        android:padding="3dp"
+        android:progress="100" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        style="@style/myNumOutputs"
+        android:minWidth="70dp"
+        android:text="@string/Placeholder2"
+        android:textSize="20sp" />
+
+</TableRow>
 
 <TableRow>
         <TextView style="@style/myLabels" android:layout_column="1" android:text="@string/label_3" />
+
 </TableRow>
 <TableRow>
-<SeekBar android:layout_column="1" android:id="@+id/SeekBar03" android:padding="3dp" android:max="100" android:progress="55" ></SeekBar>
-<TextView style="@style/myNumOutputs" android:text="000F" android:id="@+id/TextView03" ></TextView>
+<SeekBar android:layout_column="1" 
+    android:id="@+id/SeekBar03" android:padding="3dp" android:max="100" android:progress="55" />
+
+<TextView
+    android:id="@+id/TextView03"
+    style="@style/myNumOutputs"
+    android:text="@string/Placeholder3"
+    android:textSize="20sp" />
+
 </TableRow>
-        <TextView style="@style/myLabels" android:layout_column="1" android:text="@string/label_4" android:textStyle="italic" />
+
 <TableRow>
-<ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_column="1" android:id="@+id/SeekBar04" android:padding="3dp" android:focusable="false" android:layout_gravity="center_vertical" android:max="100" android:progress="33" ></ProgressBar>
-<TextView style="@style/myNumOutputs" android:text="000%" android:id="@+id/TextView04" android:textColor="#EEEEEE"></TextView>
+        <TextView style="@style/myLabels" android:layout_column="1" android:text="@string/label_4" />
 </TableRow>
+
+<TableRow>
+
+<SeekBar
+    android:id="@+id/SeekBar04"
+    android:layout_column="1"
+    android:clickable="false"
+    android:max="100"
+    android:padding="3dp"
+    android:progress="33" >
+</SeekBar>
+
+<TextView
+    android:id="@+id/TextView04"
+    style="@style/myNumOutputs"
+    android:text="@string/Placeholder4"
+    android:textColor="#EEEEEE"
+    android:textSize="20sp" />
+
+</TableRow>
+
 </TableLayout>

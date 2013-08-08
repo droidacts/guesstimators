@@ -6,6 +6,10 @@
 <string name="label_3">Indoor temperature</string>
 <string name="label_4">Estimated indoor RH</string>
 <string name="label_FC">Fahrenheit / Celsius</string>
+<string name="Placeholder1">000</string>
+<string name="Placeholder2">000%</string>
+<string name="Placeholder3">000</string>
+<string name="Placeholder4">000%</string>
 <string name="label_units_T">Units</string>
 <string-array name="F_C">
   <item>F</item>
