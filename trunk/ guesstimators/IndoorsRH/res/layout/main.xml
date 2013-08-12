@@ -64,14 +64,13 @@
 
 <TableRow>
 
-<SeekBar
+<ProgressBar
     android:id="@+id/SeekBar04"
+    style="?android:attr/progressBarStyleHorizontal"
     android:layout_column="1"
-    android:clickable="false"
     android:max="100"
     android:padding="3dp"
-    android:progress="33" >
-</SeekBar>
+    android:progress="33" />
 
 <TextView
     android:id="@+id/TextView04"
