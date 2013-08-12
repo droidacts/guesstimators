@@ -20,8 +20,8 @@
   <item>Celsius</item>
 </string-array>
 <string name="msg_about">About</string>
-<string name="msg_release">GPL release version 1.0</string>
-<string name="msg_copyr">© 2011 Cecil Cheung</string>
-<string name="msg_desc">Simple app to estimate indoor relative humidity, especially when it has been raining for a while. \nGPL release version 1.0\n© 2011 Cecil Cheung\nhttp://code.google.com/p/guesstimators/</string>
+<string name="msg_release">GPL release version 1.0.1</string>
+<string name="msg_copyr">© 2011,2013 Cecil Cheung</string>
+<string name="msg_desc">Simple app to estimate indoor relative humidity, especially when it has been raining for sometime. \nGPL release version 1.0.1\n© 2011,2013 Cecil Cheung\nhttp://code.google.com/p/guesstimators/</string>
 </resources>
 
