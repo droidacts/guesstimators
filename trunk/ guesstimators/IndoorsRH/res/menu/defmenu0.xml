@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/Menu0prefs"
-          android:title="Prefs" />
+          android:title="@string/mlabel_1" />
     <item android:id="@+id/Menu0about"
-          android:title="About" />
+          android:title="@string/mlabel_2" />
 </menu>

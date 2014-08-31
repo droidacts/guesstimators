@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      android:installLocation="auto" package="org.xluz.droidacts.guesstimators.indoorRH" 
-      android:versionName="1.0.1" android:versionCode="2">
-    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="15"/>
-    <application android:label="@string/app_name" android:icon="@drawable/guessicons" android:allowClearUserData="false" android:allowBackup="true">
-        <activity android:label="@string/app_name" android:name=".mainForm">
+    package="org.xluz.droidacts.guesstimators.indoorRH"
+    android:installLocation="auto"
+    android:versionCode="3"
+    android:versionName="1.0.3" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:allowClearUserData="false"
+        android:icon="@drawable/guessicons"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".mainForm"
+            android:configChanges="keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:label="Preferences" android:name=".PrefsForm"></activity>
+        <activity
+            android:name=".PrefsForm"
+            android:label="@string/mlabel_1" >
+        </activity>
+        <activity android:name=".PrefsFormF" >
+        </activity>
     </application>
-</manifest> 
+
+</manifest>
