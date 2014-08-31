@@ -1,5 +1,7 @@
 package org.xluz.droidacts.guesstimators.indoorRH;
 /*
+  Preference activity class used before API 11
+  
 Copyright (c) 2011 Cecil Cheung
 This software is released under the GNU General Public License version 2.
 See, for example, "http://opensource.org/licenses/gpl-2.0.php".

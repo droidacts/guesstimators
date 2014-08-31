@@ -1,10 +1,13 @@
 package org.xluz.droidacts.guesstimators.indoorRH;
 /*
-Copyright (c) 2011 Cecil Cheung
+  An app to estimate indoor humidity
+  
+Copyright (c) 2011, 2014 Cecil Cheung
 This software is released under the GNU General Public License version 2.
 See, for example, "http://opensource.org/licenses/gpl-2.0.php".
 */
 import android.os.Bundle;
+import android.os.Build;
 import android.preference.PreferenceManager;
 import android.app.*;
 import android.content.*;
@@ -31,8 +34,14 @@ public class mainForm extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch(item.getItemId()) {
 		case R.id.Menu0prefs:
-			Intent itt = new Intent(this, PrefsForm.class);
-			startActivityForResult(itt, 1);
+			if(Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB) {
+				Intent itt = new Intent(this, PrefsForm.class);
+				startActivityForResult(itt, 1);
+			} else {
+				Intent itt = new Intent(this, PrefsFormF.class);
+				startActivityForResult(itt, 1);
+
+			}
 			// update displayed values
 			updateAllSeekbars();
 			return true;
@@ -60,7 +69,7 @@ public class mainForm extends Activity {
         setContentView(R.layout.main);
         Context appContext = getApplicationContext();
         appPrefs = PreferenceManager.getDefaultSharedPreferences(appContext);
-     
+
         oneBarHandle = new SBhandler();
         SeekBar outBar = (SeekBar)findViewById(R.id.SeekBar01);
         outBar.setOnSeekBarChangeListener(oneBarHandle);
@@ -96,16 +105,19 @@ public class mainForm extends Activity {
 		 */
 		public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 			String Tunit=appPrefs.getString("PREFS_UNITS","F");
+			String TunitSym;
 			
 			if(seekBar==findViewById(R.id.SeekBar01)) {
 				if(Tunit.compareTo("F")==0) {    // Fahrenheit scale
+					TunitSym = getString(R.string.fahrenheit);
 					outT = (int)(progress*9/10.0+32.5); 
 				} else {                         // Celsius scale
+					TunitSym = getString(R.string.celsius);
 					outT = progress/2;
 				}
 				TextView tt=(TextView)findViewById(R.id.TextView01);
 				sb1 = progress;
-				tt.setText(Integer.toString(outT)+Tunit);
+				tt.setText(Integer.toString(outT)+TunitSym);
 			} else 
 			if(seekBar==findViewById(R.id.SeekBar02)) {
 				TextView tt=(TextView)findViewById(R.id.TextView02);
@@ -114,13 +126,15 @@ public class mainForm extends Activity {
 			} else 
 			if(seekBar==findViewById(R.id.SeekBar03)) {
 				if(Tunit.compareTo("F")==0) {    // Fahrenheit scale
+					TunitSym = getString(R.string.fahrenheit);
 					inT = (int)(progress*9/10.0+32.5); 
 				} else {                         // Celsius
+					TunitSym = getString(R.string.celsius);
 					inT = progress/2;
 				}
 				TextView tt=(TextView)findViewById(R.id.TextView03);
 				sb3 = progress;
-				tt.setText(Integer.toString(inT)+Tunit);
+				tt.setText(Integer.toString(inT)+TunitSym);
 			}
 		}
 
