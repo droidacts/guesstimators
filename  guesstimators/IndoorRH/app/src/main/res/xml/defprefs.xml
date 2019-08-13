@@ -1,0 +1,15 @@
+<androidx.preference.PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <androidx.preference.PreferenceCategory
+    app:title="Units, Locale">
+    <ListPreference
+        app:key="PREFS_UNITS"
+        app:entryValues="@array/F_C"
+        app:entries="@array/units_T"
+        app:defaultValue="F"
+        app:summary="@string/label_FC"
+        app:title="@string/label_units_T" />
+
+  </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>
