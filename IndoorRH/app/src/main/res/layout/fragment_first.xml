@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:layout_marginEnd="2dp"
+android:stretchColumns="1" >
+
+<TableRow>
+
+    <TextView
+        android:layout_column="1"
+        android:text="@string/label_1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+</TableRow>
+
+<TableRow>
+    <SeekBar
+        android:id="@+id/SeekBar01"
+        android:layout_column="1"
+        android:max="100"
+        android:padding="3dp"
+        android:progress="33" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:text="@string/Placeholder1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+</TableRow>
+
+<TableRow>
+
+    <TextView
+        android:layout_column="1"
+        android:text="@string/label_2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+</TableRow>
+
+<TableRow>
+    <SeekBar
+        android:id="@+id/SeekBar02"
+        android:layout_column="1"
+        android:max="100"
+        android:padding="3dp"
+        android:progress="100" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:text="@string/Placeholder2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+</TableRow>
+
+<TableRow>
+
+    <TextView
+        android:layout_column="1"
+        android:text="@string/label_3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+</TableRow>
+
+<TableRow>
+    <SeekBar
+        android:id="@+id/SeekBar03"
+        android:layout_column="1"
+        android:max="100"
+        android:padding="3dp"
+        android:progress="55" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:text="@string/Placeholder3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+</TableRow>
+
+<TableRow>
+
+    <TextView
+        android:layout_column="1"
+        android:text="@string/label_4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+</TableRow>
+
+<TableRow>
+
+    <ProgressBar
+        android:id="@+id/SeekBar04"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_column="1"
+        android:max="100"
+        android:padding="3dp"
+        android:progress="33" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:text="@string/Placeholder4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#08082B" />
+
+</TableRow>
+
+</TableLayout>

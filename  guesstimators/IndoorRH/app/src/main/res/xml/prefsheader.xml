@@ -1,5 +1,0 @@
-<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
-  <header android:fragment="org.xluz.droidacts.guesstimators.indoorRH.PrefsFragment"
-          android:title="Settings"
-          android:summary="Various settings/preferences" />
-</preference-headers>
