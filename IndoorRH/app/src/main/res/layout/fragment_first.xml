@@ -14,17 +14,20 @@ android:stretchColumns="1" >
 </TableRow>
 
 <TableRow>
+
     <SeekBar
         android:id="@+id/SeekBar01"
         android:layout_column="1"
         android:max="100"
         android:padding="3dp"
-        android:progress="33" />
+        android:progress="33"
+        android:progressTint="#03A9F4" />
 
     <TextView
         android:id="@+id/TextView01"
+        android:gravity="center_vertical|end"
         android:text="@string/Placeholder1"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 </TableRow>
 
 <TableRow>
@@ -36,17 +39,20 @@ android:stretchColumns="1" >
 </TableRow>
 
 <TableRow>
+
     <SeekBar
         android:id="@+id/SeekBar02"
         android:layout_column="1"
         android:max="100"
         android:padding="3dp"
-        android:progress="100" />
+        android:progress="100"
+        android:progressTint="#03A9F4" />
 
     <TextView
         android:id="@+id/TextView02"
+        android:gravity="center_vertical|end"
         android:text="@string/Placeholder2"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 </TableRow>
 
 <TableRow>
@@ -58,17 +64,20 @@ android:stretchColumns="1" >
 </TableRow>
 
 <TableRow>
+
     <SeekBar
         android:id="@+id/SeekBar03"
         android:layout_column="1"
         android:max="100"
         android:padding="3dp"
-        android:progress="55" />
+        android:progress="55"
+        android:progressTint="#03A9F4" />
 
     <TextView
         android:id="@+id/TextView03"
+        android:gravity="center_vertical|end"
         android:text="@string/Placeholder3"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 </TableRow>
 
 <TableRow>
@@ -87,13 +96,15 @@ android:stretchColumns="1" >
         android:layout_column="1"
         android:max="100"
         android:padding="3dp"
-        android:progress="33" />
+        android:progress="33"
+        android:progressTint="#FFEB3B" />
 
     <TextView
         android:id="@+id/TextView04"
+        android:gravity="center_vertical|end"
         android:text="@string/Placeholder4"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#08082B" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#707070" />
 
 </TableRow>
 

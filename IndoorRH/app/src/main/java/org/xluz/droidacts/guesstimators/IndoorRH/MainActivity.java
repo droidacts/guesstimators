@@ -1,30 +1,29 @@
 package org.xluz.droidacts.guesstimators.IndoorRH;
+/**
+ * Indoor relative humidity guesstimation
+ * This app estimates the indoor humidity given the indoor & outdoor temperatures in addition to outdoor humidity
+ * <p>
+ * Copyright (c) 2024 Cecil Cheung, PhD
+ * This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+ * See, for example, "http://mozilla.org/MPL/2.0/".
+ */
 
-import android.app.AlertDialog;
 import android.os.Bundle;
-
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.view.View;
-
-import androidx.core.view.WindowCompat;
+import android.view.Menu;
+import android.view.MenuItem;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-
+import com.google.android.material.snackbar.Snackbar;
+import android.app.AlertDialog;
 import org.xluz.droidacts.guesstimators.IndoorRH.databinding.ActivityMainBinding;
-
-import android.view.Menu;
-import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,14 +37,11 @@ public class MainActivity extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-        binding.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        binding.fab.setOnClickListener(view ->
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAnchorView(R.id.fab)
-                        .setAction("Action", null).show();
-            }
-        });
+                .setAnchorView(R.id.fab)
+                .setAction("Action", null).show()
+        );
     }
 
     @Override
@@ -63,16 +59,16 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if(id == R.id.Menu0prefs) {
+        if (id == R.id.Menu0prefs) {
             Navigation.findNavController(this, R.id.nav_host_fragment_content_main).navigate(R.id.SecondFragment);
             return true;
-        } else if(item.getItemId() == R.id.Menu0about) {
-                AlertDialog.Builder aboutDialog = new AlertDialog.Builder(this);
-                aboutDialog.setTitle(R.string.msg_about);
-                aboutDialog.setMessage(R.string.msg_desc);
-                aboutDialog.setPositiveButton("OK", null);
-                aboutDialog.show();
-                return true;
+        } else if (item.getItemId() == R.id.Menu0about) {
+            AlertDialog.Builder aboutDialog = new AlertDialog.Builder(this);
+            aboutDialog.setTitle(R.string.msg_about);
+            aboutDialog.setMessage(R.string.msg_desc);
+            aboutDialog.setPositiveButton("OK", null);
+            aboutDialog.show();
+            return true;
         }
 
         return super.onOptionsItemSelected(item);

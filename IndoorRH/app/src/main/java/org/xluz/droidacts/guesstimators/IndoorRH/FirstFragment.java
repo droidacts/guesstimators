@@ -1,12 +1,11 @@
 package org.xluz.droidacts.guesstimators.IndoorRH;
-
-
+/** This is the main UI fragment
+ */
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.*;
-
+import android.widget.SeekBar;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.preference.PreferenceManager;
@@ -52,13 +51,11 @@ public class FirstFragment extends Fragment {
     }
    private void updateAllSeekbars() {
         int p;
-        SeekBar outBar = binding.SeekBar01;
-        p = outBar.getProgress();
-        oneBarHandle.onProgressChanged(outBar, p, true);
-        outBar = binding.SeekBar02;
-        p = outBar.getProgress();
-        oneBarHandle.onProgressChanged(outBar, p, true);
-//        outBar = binding.SeekBar03;
+
+        p = binding.SeekBar01.getProgress();
+        oneBarHandle.onProgressChanged(binding.SeekBar01, p, true);
+        p = binding.SeekBar02.getProgress();
+        oneBarHandle.onProgressChanged(binding.SeekBar02, p, true);
         p = binding.SeekBar03.getProgress();
         oneBarHandle.onProgressChanged(binding.SeekBar03, p, true);
         oneBarHandle.onStopTrackingTouch(binding.SeekBar03);
@@ -80,11 +77,9 @@ public class FirstFragment extends Fragment {
                     TunitSym = getString(R.string.celsius);
                     outT = progress / 2;
                 }
-                //TextView tt = findViewById(R.id.TextView01);
                 sb1 = progress;
                 binding.TextView01.setText(Integer.toString(outT) + TunitSym);
             } else if (seekBar == binding.SeekBar02) {
-                //TextView tt = (TextView) findViewById(R.id.TextView02);
                 outRH = progress;
                 binding.TextView02.setText(Integer.toString(progress) + "%");
             } else if (seekBar == binding.SeekBar03) {
@@ -95,7 +90,6 @@ public class FirstFragment extends Fragment {
                     TunitSym = getString(R.string.celsius);
                     inT = progress / 2;
                 }
-                //TextView tt = findViewById(R.id.TextView03);
                 sb3 = progress;
                 binding.TextView03.setText(Integer.toString(inT) + TunitSym);
             }
@@ -109,9 +103,7 @@ public class FirstFragment extends Fragment {
             // values in seekBar divided by 2 gives temperatures in Celsius
             inRH = indoorRH.calcRHin(sb1 / 2, sb3 / 2, outRH);
 
-            //TextView tt = findViewById(R.id.TextView04);
             binding.TextView04.setText(Integer.toString(inRH) + "%");
-            //ProgressBar outBar = findViewById(R.id.SeekBar04);
             binding.SeekBar04.setProgress(inRH);
         }
     }
