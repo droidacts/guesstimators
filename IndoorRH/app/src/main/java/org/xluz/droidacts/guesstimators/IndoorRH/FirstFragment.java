@@ -1,5 +1,9 @@
 package org.xluz.droidacts.guesstimators.IndoorRH;
 /** This is the main UI fragment
+ *
+ *  Copyright (c) 2024 Cecil Cheung, PhD
+ *  This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+ *  See, for example, "http://mozilla.org/MPL/2.0/".
  */
 import android.os.Bundle;
 import android.view.LayoutInflater;
