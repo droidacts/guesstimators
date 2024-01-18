@@ -1,5 +1,4 @@
-# Guesstimators
-![original icon](old-guessIcons_web.png)
+![original icon](old-guessicons_web.png)
 ## IndoorRH --- indoor humidity estimates
 ### How dry indoor air can be during winter?
 
