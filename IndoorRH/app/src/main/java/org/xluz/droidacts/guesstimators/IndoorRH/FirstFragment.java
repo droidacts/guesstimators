@@ -1,9 +1,9 @@
 package org.xluz.droidacts.guesstimators.IndoorRH;
-/** This is the main UI fragment
- *
- *  Copyright (c) 2024 Cecil Cheung, PhD
- *  This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
- *  See, for example, "http://mozilla.org/MPL/2.0/".
+/* This is the main UI fragment
+
+   Copyright (c) 2024, 2025 Cecil Cheung, PhD
+   This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+   See, for example, "http://mozilla.org/MPL/2.0/".
  */
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -24,7 +24,7 @@ public class FirstFragment extends Fragment {
 
     @Override
     public View onCreateView(
-            LayoutInflater inflater, ViewGroup container,
+            @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
 
@@ -39,7 +39,7 @@ public class FirstFragment extends Fragment {
         binding.SeekBar01.setOnSeekBarChangeListener(oneBarHandle);
         binding.SeekBar02.setOnSeekBarChangeListener(oneBarHandle);
         binding.SeekBar03.setOnSeekBarChangeListener(oneBarHandle);
-        appPrefs = PreferenceManager.getDefaultSharedPreferences(this.getContext());
+        appPrefs = PreferenceManager.getDefaultSharedPreferences(this.requireContext());
     }
 
     @Override

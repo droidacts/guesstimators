@@ -1,11 +1,11 @@
 package org.xluz.droidacts.guesstimators.IndoorRH;
-/**
- * Indoor relative humidity guesstimation
- * This app estimates the indoor humidity given the indoor & outdoor temperatures in addition to outdoor humidity
- * <p>
- * Copyright (c) 2024 Cecil Cheung, PhD
- * This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
- * See, for example, "http://mozilla.org/MPL/2.0/".
+/*
+  Indoor relative humidity guesstimation
+  This app estimates the indoor humidity given the indoor & outdoor temperatures in addition to outdoor humidity
+  <p>
+  Copyright (c) 2024, 2025 Cecil Cheung, PhD
+  This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+  See, for example, "http://mozilla.org/MPL/2.0/".
  */
 
 import android.os.Bundle;
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

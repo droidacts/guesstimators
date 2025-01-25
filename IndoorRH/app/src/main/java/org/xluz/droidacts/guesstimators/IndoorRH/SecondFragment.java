@@ -1,6 +1,5 @@
 package org.xluz.droidacts.guesstimators.IndoorRH;
-/** This is the Settings fragment
- *
+/* This is the Settings fragment
  */
 
 import android.os.Bundle;

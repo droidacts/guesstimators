@@ -1,14 +1,15 @@
 package org.xluz.droidacts.guesstimators.IndoorRH;
 /*
-  Relative humility calculation
-  
-Copyright (c) 2011, 2019 Cecil Cheung, PhD
-This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
-See, for example, "http://mozilla.org/MPL/2.0/".
+	Relative humility calculation
+
+	Copyright (c) 2011, 2019 Cecil Cheung, PhD
+	This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+	See, for example, "http://mozilla.org/MPL/2.0/".
 */
 /**
  * @author Cecil Cheung
- * Comments, requests, bug reports go to the project page "https://github.com/droidacts/guesstimators"
+ * Comments, requests, bug reports go to the project page
+ * "<a href="https://github.com/droidacts/guesstimators">...</a>"
  */
 public class indoorRH {
 	/**
@@ -16,7 +17,7 @@ public class indoorRH {
 	 * in units of kPa
 	 * ref.: CRC Handbook of Chemistry and Physics, 86th/ed, section 6
 	 */
-	static final double Pwater[] = { 0.61129, 
+	static final double[] Pwater = { 0.61129,
 		0.65716, 0.70605, 0.75813, 0.81359, 0.87260, 0.93537, 1.0021, 1.0730, 1.1482, 1.2281,
 		1.3129, 1.4027, 1.4979, 1.5988, 1.7056, 1.8185, 1.9380, 2.0644, 2.1978, 2.3388,
 		2.4877, 2.6447, 2.8104, 2.9850, 3.1690, 3.3629, 3.5670, 3.7818, 4.0078, 4.2455,

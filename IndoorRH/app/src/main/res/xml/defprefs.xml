@@ -1,14 +1,14 @@
 <androidx.preference.PreferenceScreen
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:android="http://schemas.android.com/apk/res/android">
   <androidx.preference.PreferenceCategory
-    app:title="Units, Locale">
+    android:title="Units, Locale">
     <ListPreference
-        app:key="PREFS_UNITS"
-        app:entryValues="@array/F_C"
-        app:entries="@array/units_T"
-        app:defaultValue="F"
-        app:summary="@string/label_FC"
-        app:title="@string/label_units_T" />
+        android:key="PREFS_UNITS"
+        android:entryValues="@array/F_C"
+        android:entries="@array/units_T"
+        android:defaultValue="F"
+        android:summary="@string/label_FC"
+        android:title="@string/label_units_T" />
 
   </androidx.preference.PreferenceCategory>
 
