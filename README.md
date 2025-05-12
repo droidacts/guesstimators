@@ -2,7 +2,7 @@
 ## IndoorRH --- indoor humidity estimates
 
 - Jan 2025:
- * Rebuild with Android Studio 2024.2.2, to SDK 35
+  * Rebuild with Android Studio 2024.2.2, to SDK 35
 
 - Jan 2024:
   * Rebuild using latest android studio (hedgehog) to SDK 34

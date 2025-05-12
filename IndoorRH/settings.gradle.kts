@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Basic Activity"
+rootProject.name = "Indoor RH"
 include(":app")
