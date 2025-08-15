@@ -10,8 +10,8 @@ android {
         applicationId = "org.xluz.droidacts.guesstimators.IndoorRH"
         minSdk = 25
         targetSdk = 35
-        versionCode = 8
-        versionName = "1.1.2"
+        versionCode = 9
+        versionName = "1.1.3"
     }
 
     buildTypes {
@@ -24,8 +24,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     buildFeatures {
         viewBinding = true
