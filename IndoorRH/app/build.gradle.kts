@@ -4,14 +4,14 @@ plugins {
 
 android {
     namespace = "org.xluz.droidacts.guesstimators.IndoorRH"
-    compileSdk = 35
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "org.xluz.droidacts.guesstimators.IndoorRH"
         minSdk = 25
-        targetSdk = 35
-        versionCode = 9
-        versionName = "1.1.3"
+        targetSdk = 36
+        versionCode = 11
+        versionName = "1.1.5"
     }
 
     buildTypes {
